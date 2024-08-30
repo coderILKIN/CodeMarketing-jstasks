@@ -1,7 +1,13 @@
+for(let i = 4; i < 200; i++){
 
-
-for (i = 0; i < 100; i++) {
-  if (i % 5 != 0 && i % 2 != 0 && i % 3 != 0 && i % 7 != 0) {
+  let check = false;
+  for(let j = 2; j < i; j++){
+    if(i % j == 0){
+      check = true;
+      break;
+    }
+  }
+  if(!check){
     console.log(i);
   }
 }
